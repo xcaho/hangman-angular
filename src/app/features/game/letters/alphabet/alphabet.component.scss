@@ -1,0 +1,30 @@
+@import "../../../../app.component";
+
+.controls_container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 36rem;
+  margin:0 auto;
+}
+
+.letter_button {
+  background-color: $bg-color;
+  border: 2px solid $primary;
+  font-size: $bigger-font-size;
+  text-align: center;
+  width: 3rem;
+  box-shadow: none;
+  cursor: pointer;
+  border-radius:0.25rem;
+  &:disabled{
+    cursor: default;
+    opacity: 0.3;
+  }
+  &:focus{
+    outline:3px solid $primary;
+  }
+}
+
+

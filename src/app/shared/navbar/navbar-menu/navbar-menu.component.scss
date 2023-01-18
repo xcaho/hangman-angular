@@ -1,0 +1,50 @@
+@import "../../../app.component";
+
+.navbar-nav{
+  display: flex;
+  margin-left: auto;
+  .nav-item{
+    margin:0.5rem;
+    .nav-link{
+      border:0;
+      display: block;
+      box-sizing: border-box;
+      height: 100%;
+      padding: 0.5rem;
+      color: $primary;
+      border-bottom: $border-solid;
+      text-decoration: none;
+      cursor: pointer;
+      background-color: $bg-color;
+      &:hover{
+        background-color: $hover-color;
+      }
+      &:disabled{
+        opacity:0.3;
+        cursor:default;
+      }
+    }
+  }
+}
+
+#daily, #choose_new_word {
+  position: relative;
+  padding-right: 2rem;
+  &::after{
+    font-family: "Material Icons";
+    position: absolute;
+    right: 0.5rem;
+    transform: translateY(-50%);
+  }
+}
+
+#daily::after{
+  content: "\e8df";
+  top:48%;
+}
+
+#choose_new_word::after{
+  content: "\eb8b";
+  top:48%;
+}
+

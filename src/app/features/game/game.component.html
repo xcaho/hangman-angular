@@ -1,0 +1,10 @@
+<div class="container">
+  <app-image></app-image>
+  <div>
+    <app-password [chosenWord]="passwordService.chosenWord" [wordBottom]="passwordService.wordBottom"></app-password>
+    <app-alphabet></app-alphabet>
+    <keyboard-support></keyboard-support>
+    <app-status [message]="coreComponent.message"></app-status>
+    <app-definition></app-definition>
+  </div>
+</div>

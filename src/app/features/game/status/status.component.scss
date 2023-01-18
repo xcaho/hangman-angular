@@ -1,0 +1,12 @@
+@import "../../../app.component";
+
+.status-container {
+  margin: 2rem 0;
+  text-align: center;
+  min-height: 3.25rem;
+  cursor: default;
+  color: $primary;
+  .message {
+    font-size: $biggest-font-size;
+  }
+}

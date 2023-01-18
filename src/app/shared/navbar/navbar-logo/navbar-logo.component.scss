@@ -1,0 +1,32 @@
+@import "../../../app.component";
+
+.navbar-brand{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 22rem;
+  cursor: default;
+}
+
+.title {
+  font-size: $h1-font-size;
+  color: $primary;
+  font-weight: 600;
+  flex-wrap: wrap;
+  user-select: none;
+  &:focus{
+    outline: 4px solid $primary;
+  }
+}
+
+.brand-img{
+  width: 3rem;
+  height: 3rem;
+}
+
+.description{
+  display: block;
+  font-size: $bigger-font-size;
+  padding-left: 1rem;
+  white-space: nowrap;
+  font-weight: 400;
+}

@@ -1,0 +1,16 @@
+@import "src/app/app.component";
+
+header{
+  min-height: 6rem;
+  padding:0 1rem;
+  border-bottom: $border-solid;
+  .navbar{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    gap:1rem;
+    padding: 1rem 0;
+  }
+}
